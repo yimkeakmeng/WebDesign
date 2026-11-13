@@ -1,0 +1,28 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+div{
+    background-color: steelblue;
+    color: black;
+    padding:30px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+}
+@media(max-width: 1000px){
+    body{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 768px){
+    body{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 480px){
+    body{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
